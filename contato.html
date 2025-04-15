@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form method="post" action="/processamento">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+            
+            <label for="nome" class="required">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br>
+            
+            <label for="email" class="required">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX">
+            <br>
+            
+            <label for="celular" class="required">Celular:</label>
+            <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
+            <br>
+            
+            <label for="sexo" class="required">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Selecione...</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+                <option value="nao_informar">Prefiro não informar</option>
+            </select>
+            <br>
+            
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
